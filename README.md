@@ -362,7 +362,7 @@ Completely removes the last commit and its changes.
 
 ---
 
-## Step 8: Make Another Commit
+## Step 9: Make Another Commit
 ```bash
 git add .
 git commit -m "Added 2 lines of corrected code"
@@ -376,7 +376,7 @@ Creates a new commit with corrected changes.
 
 ---
 
-## Step 9: Undo a Commit Using Revert
+## Step 10: Undo a Commit Using Revert
 `git revert HEAD`
 
 Creates a new commit that reverses the latest commit changes.
@@ -393,7 +393,7 @@ NoteL we enter a editor here , to quit press esc key and enter or :wq and enter
 
 ---
 
-## Step 10: Verifying the Commit History
+## Step 11: Verifying the Commit History
 `git log --oneline`
 
 Displays the updated commit history in compact format.
@@ -404,7 +404,7 @@ Displays the updated commit history in compact format.
 ---
 
 ========================================== 
-# Completion
+
 
 
 
