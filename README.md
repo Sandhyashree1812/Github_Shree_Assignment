@@ -247,7 +247,8 @@ Try force deleting a branch (create a dummy branch for this)
 
 Deletes the `feature-update` branch after it has been merged.
 
-<img width="687" height="381" alt="image" src="https://github.com/user-attachments/assets/82e6bf0d-d4e6-4bf6-867e-df1e48ae2ea6" />
+<img width="687" height="381" alt="Screenshot 2026-05-10 160811" src="https://github.com/user-attachments/assets/70871e44-01ed-431b-94a7-3ac07c9640b1" />
+
 
 
 ---
@@ -264,7 +265,118 @@ Creates a temporary branch for testing force deletion.
 
 Force deletes the `dummy-branch` even if it is not merged.
 
-<img width="1050" height="267" alt="image" src="https://github.com/user-attachments/assets/a090a0e6-78be-4cbc-abf2-6f35a0e76ab6" />
+<img width="1050" height="267" alt="Screenshot 2026-05-10 161318" src="https://github.com/user-attachments/assets/4e160766-49c4-4516-9c80-bc9fd96d8287" />
+
+
+---
+
+================================================================================================================ 
+
+#Assignment 4
+
+## Step 1: Modify `app.py`
+Make changes in `app.py` without committing them.
+
+---
+
+## Step 2: Stash the Changes (Including Untracked Files)
+`git stash -u`
+
+Temporarily saves tracked and untracked changes.
+
+
+
+---
+
+## Step 3: Check the Stash List
+`git stash list`
+
+Displays all saved stashes.
+
+<img width="782" height="132" alt="Screenshot 2026-05-10 162704" src="https://github.com/user-attachments/assets/758c856d-601b-4442-8b12-466e302013f8" />
+
+
+
+---
+
+## Step 4: Apply the Stashed Changes Back
+`git stash apply`
+
+Restores the most recent stashed changes.
+
+<img width="696" height="353" alt="Screenshot 2026-05-10 164033" src="https://github.com/user-attachments/assets/f7895ab1-0d18-4360-aa35-8a5b806c5e7e" />
+
+<img width="622" height="327" alt="Screenshot 2026-05-10 164650" src="https://github.com/user-attachments/assets/7c96ad1c-46c7-4bd3-8018-e726707fe214" />
+
+
+
+---
+
+## Step 5: Commit the Changes
+```bash
+git add .
+git commit -m "Restored and committed stashed changes"
+```
+
+Stages and commits the restored changes.
+
+<img width="956" height="187" alt="Screenshot 2026-05-10 165210" src="https://github.com/user-attachments/assets/77d5e225-a8aa-4a76-aa28-86c647ca1ff8" />
+
+
+---
+
+## Step 6: Make Another Commit with Incorrect Code
+```bash
+git add .
+git commit -m "Added incorrect code"
+```
+
+Creates a commit containing incorrect changes.
+
+<img width="516" height="382" alt="image" src="https://github.com/user-attachments/assets/471f684f-9af1-4406-aab9-d7a526c517ad" />
+
+
+
+---
+
+## Step 7: Undo the Last Commit Using Reset
+`git reset --soft HEAD~1`
+
+Removes the last commit while keeping the changes in the staging area.
+
+<img width="756" height="201" alt="image" src="https://github.com/user-attachments/assets/a1fb5432-0282-49b1-95fa-422771186369" />
+
+<img width="522" height="387" alt="image" src="https://github.com/user-attachments/assets/b8937980-2d23-4a3a-8aaf-a4f41cef418d" />
+
+
+
+> Optional:
+> `git reset --hard HEAD~1`
+> Completely removes the last commit and its changes.
+
+---
+
+## Step 8: Make Another Commit
+```bash
+git add .
+git commit -m "Added corrected code"
+```
+
+Creates a new commit with corrected changes.
+
+---
+
+## Step 9: Undo a Commit Using Revert
+`git revert HEAD`
+
+Creates a new commit that reverses the latest commit changes.
+
+---
+
+## Step 10: Verify the Commit History
+`git log --oneline`
+
+Displays the updated commit history in compact format.
 
 ---
 
