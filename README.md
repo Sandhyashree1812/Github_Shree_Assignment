@@ -63,6 +63,71 @@ Pushes the `main` branch to GitHub and sets it as the default upstream branch.
 
 #Assignment 2
 
+## Step 1: Modify `app.py`
+Make changes or add new functionality inside `app.py`.
+
+
+<img width="1590" height="228" alt="Screenshot 2026-05-10 074725" src="https://github.com/user-attachments/assets/a4a14353-e235-4602-b9f0-50eb237cd306" />
+
+-------
+
+## Step 2: Check Changes Before Staging
+`git status`
+
+Shows modified files before staging.
+
+<img width="762" height="260" alt="image" src="https://github.com/user-attachments/assets/9fab891c-8b76-49e5-8a6e-6b816b4c7705" />
+
+------
+
+## Step 3: View File Differences
+`git diff`
+
+Displays the changes made in the file.
+
+---
+
+## Step 4: Stage Specific Changes
+`git add -p`
+
+<img width="1200" height="765" alt="image" src="https://github.com/user-attachments/assets/6bdd3cc9-dd6d-4950-aa68-4c9f3cbc68c9" />
+
+---------
+
+## Step 5: Commit Changes
+`git commit -m "Added 3 new features"`
+
+Creates a new commit with a descriptive commit message.
+
+<img width="1200" height="765" alt="Screenshot 2026-05-10 075418" src="https://github.com/user-attachments/assets/960e089d-6149-468d-8eca-8b3b368040f5" />
+
+<img width="1595" height="393" alt="Screenshot 2026-05-10 080852" src="https://github.com/user-attachments/assets/a3339ac4-6ae2-4b45-8307-97387a90cef9" />
+
+================== 
+
+
+## Step 6: Make Another Change
+Edit `app.py` again with additional updates.
+
+## Step 7: Stage All Changes
+`git add .`
+
+Stages all modified files.
+
+## Step 8: Commit Again
+`git commit -m "Updated app.py with additional changes"`
+
+Saves the latest updates.
+
+## Step 9: View Full Commit History
+`git log`
+
+Displays detailed commit history.
+
+## Step 10: View Compact Commit History
+`git log --oneline`
+
+Displays commit history in one-line format.
 
 
 
