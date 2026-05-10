@@ -154,6 +154,109 @@ Displays commit history in one-line format.
 
 #Assignment 3
 
+## Step 1: Create a New Branch
+`git branch feature-update`
+
+Creates a new branch named `feature-update`.
+
+---
+
+## Step 2: Switch to the New Branch
+ `git checkout -b feature-update`
+ Creates and switches to the branch in one step.
+
+---
+
+## Step 3: Modify `app.py`
+Update `app.py` with new feature logic.
+
+---
+
+## Step 4: Stage Changes
+`git add .`
+
+Stages all modified files.
+
+---
+
+## Step 5: Commit Changes
+`git commit -m "two new Logics added"`
+
+Creates a commit with the latest changes.
+
+<img width="812" height="571" alt="Screenshot 2026-05-10 083947" src="https://github.com/user-attachments/assets/50510367-d8e4-40a7-b06f-11f6c671fb8c" />
+
+<img width="1056" height="331" alt="Screenshot 2026-05-10 084342" src="https://github.com/user-attachments/assets/b51f3759-064a-4f8a-9233-b0f831f2b97f" />
+
+----- 
+
+## Step 6: Switch Back to the Main Branch
+`git checkout main`
+
+Switches from the feature branch to the `main` branch.
+
+<img width="795" height="246" alt="Screenshot 2026-05-10 084730" src="https://github.com/user-attachments/assets/78f961fe-f12a-44df-a3f9-e9101d51f089" />
+
+Note: We see the app.py in main doesnt have the logics added in app.py of feature-update
+
+<img width="843" height="456" alt="Screenshot 2026-05-10 084751" src="https://github.com/user-attachments/assets/7af6e8ad-eb52-4d65-ad0a-6f44449195eb" />
+
+
+
+---
+
+## Step 7: Merge the Feature Branch into Main
+`git merge feature-update`
+
+Merges the changes from the `feature-update` branch into `main`.
+
+<img width="706" height="153" alt="Screenshot 2026-05-10 090641" src="https://github.com/user-attachments/assets/a76a9784-5b38-4bc3-96d1-5a2fbb2e0d45" />
+
+
+
+---
+
+## Step 8: Verify Merged Changes
+`git log --oneline`
+
+Displays commit history to confirm the feature branch changes were merged successfully.
+
+
+<img width="752" height="252" alt="Screenshot 2026-05-10 090818" src="https://github.com/user-attachments/assets/7ea74cf4-6793-4b67-8c84-31810964db1b" />
+
+<img width="688" height="391" alt="Screenshot 2026-05-10 090939" src="https://github.com/user-attachments/assets/3221f32f-4ce7-470c-90b3-8bfa97b423c3" />
+
+<img width="725" height="295" alt="Screenshot 2026-05-10 091008" src="https://github.com/user-attachments/assets/7d2242b7-c656-4801-8c35-4f2d5bb143df" />
+
+
+---
+Delete the branch safely
+
+Try force deleting a branch (create a dummy branch for this)
+## Step 9: Delete the Branch Safely
+`git branch -d feature-update`
+
+Deletes the `feature-update` branch after it has been merged.
+
+---
+
+## Step 10: Create a Dummy Branch
+`git branch dummy-branch`
+
+Creates a temporary branch for testing force deletion.
+
+---
+
+## Step 11: Force Delete the Dummy Branch
+`git branch -D dummy-branch`
+
+Force deletes the `dummy-branch` even if it is not merged.
+
+---
+
+
+
+
 
 
 
