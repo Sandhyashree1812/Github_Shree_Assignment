@@ -54,4 +54,10 @@ Pushes the `main` branch to GitHub and sets it as the default upstream branch.
 
 <img width="1195" height="297" alt="image" src="https://github.com/user-attachments/assets/1ec315ec-0719-42b0-ba79-7fb65d901170" />
 
+<img width="1875" height="492" alt="image" src="https://github.com/user-attachments/assets/4cbfea94-73ef-4896-8774-ada6ebcc846c" />
+
+<img width="1642" height="521" alt="image" src="https://github.com/user-attachments/assets/20770985-23aa-49c8-a69a-f4a65aa5fdd4" />
+
+
+
 
