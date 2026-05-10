@@ -339,7 +339,7 @@ Creates a commit containing incorrect changes.
 
 ---
 
-## Step 7: Undo the Last Commit Using Reset
+## Step 7: Undo the Last Commit Using Reset soft
 `git reset --soft HEAD~1`
 
 Removes the last commit while keeping the changes in the staging area.
@@ -350,19 +350,29 @@ Removes the last commit while keeping the changes in the staging area.
 
 
 
-> Optional:
-> `git reset --hard HEAD~1`
-> Completely removes the last commit and its changes.
+## Step 8:Undo the Last Commit Using Reset hard
+`git reset --hard HEAD~1`
+Completely removes the last commit and its changes.
+
+<img width="925" height="120" alt="image" src="https://github.com/user-attachments/assets/03c3e5d2-425f-48e1-9725-d23aa3834471" />
+
+<img width="467" height="267" alt="image" src="https://github.com/user-attachments/assets/0197763c-3569-44d1-b7ce-5eee0795e32e" />
+
+
 
 ---
 
 ## Step 8: Make Another Commit
 ```bash
 git add .
-git commit -m "Added corrected code"
+git commit -m "Added 2 lines of corrected code"
 ```
 
 Creates a new commit with corrected changes.
+
+<img width="460" height="287" alt="image" src="https://github.com/user-attachments/assets/cd4b8c64-0f10-44b0-9f99-504730af542d" />
+
+<img width="861" height="177" alt="image" src="https://github.com/user-attachments/assets/1d1bb4e6-5382-43c7-92e0-a6e7f788cf1c" />
 
 ---
 
@@ -371,14 +381,30 @@ Creates a new commit with corrected changes.
 
 Creates a new commit that reverses the latest commit changes.
 
+<img width="636" height="192" alt="image" src="https://github.com/user-attachments/assets/153b15b9-6dff-4efc-b454-68a0b64cb789" />
+
+Previous:
+<img width="460" height="287" alt="Screenshot 2026-05-10 201213" src="https://github.com/user-attachments/assets/ca57dab1-c306-4ea6-9e53-3df6347c8341" />
+
+After Revert:
+<img width="417" height="317" alt="image" src="https://github.com/user-attachments/assets/4257ef96-529c-4e25-a2e2-d7ce3501a9a9" />
+
+NoteL we enter a editor here , to quit press esc key and enter or :wq and enter
+
 ---
 
-## Step 10: Verify the Commit History
+## Step 10: Verifying the Commit History
 `git log --oneline`
 
 Displays the updated commit history in compact format.
 
+<img width="807" height="302" alt="image" src="https://github.com/user-attachments/assets/f9362d79-95cd-432d-993f-164bcf075bda" />
+
+
 ---
+
+========================================== 
+# Completion
 
 
 
