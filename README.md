@@ -224,9 +224,18 @@ Displays commit history to confirm the feature branch changes were merged succes
 
 <img width="752" height="252" alt="Screenshot 2026-05-10 090818" src="https://github.com/user-attachments/assets/7ea74cf4-6793-4b67-8c84-31810964db1b" />
 
+
+
 <img width="688" height="391" alt="Screenshot 2026-05-10 090939" src="https://github.com/user-attachments/assets/3221f32f-4ce7-470c-90b3-8bfa97b423c3" />
 
+
+
 <img width="725" height="295" alt="Screenshot 2026-05-10 091008" src="https://github.com/user-attachments/assets/7d2242b7-c656-4801-8c35-4f2d5bb143df" />
+
+
+
+<img width="636" height="188" alt="Screenshot 2026-05-10 155615" src="https://github.com/user-attachments/assets/92f2bd55-9857-4bbf-8adf-8807bfc24550" />
+
 
 
 ---
@@ -237,6 +246,9 @@ Try force deleting a branch (create a dummy branch for this)
 `git branch -d feature-update`
 
 Deletes the `feature-update` branch after it has been merged.
+
+<img width="687" height="381" alt="image" src="https://github.com/user-attachments/assets/82e6bf0d-d4e6-4bf6-867e-df1e48ae2ea6" />
+
 
 ---
 
@@ -251,6 +263,8 @@ Creates a temporary branch for testing force deletion.
 `git branch -D dummy-branch`
 
 Force deletes the `dummy-branch` even if it is not merged.
+
+<img width="1050" height="267" alt="image" src="https://github.com/user-attachments/assets/a090a0e6-78be-4cbc-abf2-6f35a0e76ab6" />
 
 ---
 
